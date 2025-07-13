@@ -1,0 +1,364 @@
+body{
+    background-color: #111;
+}
+
+.circle1{
+    width: 30vw;
+    height: 30vw;
+    background-color: #FE4655;
+    border-radius: 100%;
+    margin: -10vw 0vw 0vw -10vw;
+}
+
+.circle2{
+    width: 10vw;
+    height: 10vw;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin: -3vw 0vw 0vw 0vw;
+}
+
+.circle3{
+    width: 2.5vw;
+    height: 5vw;
+    background-color: #646464;
+    border-top-left-radius: 2.5vw;
+    border-bottom-left-radius: 2.5vw;
+    margin-left: 8vw;
+    margin-right: -10vw;
+}
+
+.circles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    position: absolute;
+    width: 90vw;
+    height: 63vw;
+    background-color: #222;
+    border-radius: 3vw;
+    margin-left: 3.5vw;
+    margin-top: -18vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+}
+
+[src="pictures/main.png"] {
+    width: 90vw;
+    filter: 
+        brightness(1.1)
+        sepia(100%)
+        hue-rotate(-30deg)
+        saturate(600%)
+        contrast(1.2);
+}
+
+.img{
+    width: 90vw;
+    height: 50.6vw;
+    background-color: #FE4655;
+    margin-top: -50.9vw;
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+}
+
+footer{
+    background-color: white;
+    border-bottom-right-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+}
+
+.left{
+    display: flex;
+}
+
+.osu{
+    color: #aaa;
+    font-size: 1.5vw;
+    font-family: "roboto";
+    font-weight: 300;
+    border: 0.2vw solid #aaa;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-left: 3vw;
+    width: 3.5vw;
+    height: 4vw;
+    border-radius: 4vw;
+    padding-left: 0.5vw;
+    transform: scale(0.7);
+}
+
+.line{
+    height: 2.1vw;
+    border-right: 0.1vw solid white;
+    margin: 2.2vw 2vw 2vw 2.5vw;
+}
+
+button{
+    margin: 2.2vw 0.7vw 2.2vw 0.7vw;
+    font-size: 1.9vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 0px;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:focus::after {
+  content: '';
+  position: absolute;
+  left: 0.8vw;
+  right: 0.8vw;
+  bottom: -0.25vw;
+  height: 0.1vw;
+  background: red;
+}
+
+[src="pictures/лупа.png"]{
+    width: 2.7vw;
+    height: 2.7vw;
+    margin: 2.1vw 0.5vw 2.2vw 0.5vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+[src="pictures/ава.png"]{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 3vw;
+    margin-right: 1vw;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    margin-right: 3vw;
+    color: white;
+    font-size: 1.5vw;
+    font-family: "roboto";
+}
+
+.persons{
+    font-size: 6vw;
+    font-family: "oswald";
+    rotate: 90deg;
+    font-weight: bold;
+    -webkit-text-stroke: 0.2vw rgb(249, 135, 135);
+    color: rgba(0, 0, 0, 0);
+    transform: scaleX(1.3);
+    margin-left: -3vw;
+}
+
+.karta{
+    height: 40vw;
+    width:15vw;
+    background-color: #111;
+    position: absolute;
+    top: 11.6vw;
+    left: 20vw;
+    border-bottom-left-radius: 1vw;
+    border-top-left-radius: 1vw;
+}
+
+.k2{
+    left: 39vw;
+}
+
+.k3{
+    left: 58vw;
+}
+
+.k4{
+    left: 77vw;
+    background-color: white;
+}
+
+.karta > div > .text1{
+    color: #FE4655;
+    font-size: 2vw;
+    font-family: "saira";
+    font-weight: 550;
+    margin-bottom: -1.5vw;
+}
+
+.karta > div{
+    rotate: 90deg;
+    margin-top: 18vw;
+    margin-left: -12.8vw;
+    transform: scale(1.3);
+}
+
+.text2{
+    color: rgba(0, 0, 0, 0);
+    font-size: 2.8vw;
+    font-family: "Inter";
+    font-weight: bold;
+    -webkit-text-stroke: 0.15vw rgb(249, 135, 135);
+}
+
+[src="pictures/слайдер.png"]{
+    width: 15vw;
+    margin-top: -12vw;
+}
+
+[src="pictures/нота.png"]{
+    width: 45vw;
+    margin-left: -15.7vw;
+    margin-top: -28vw;
+}
+
+[src="pictures/реверс.png"]{
+    width: 20vw;
+    margin-top: -16vw;
+    margin-left: -4vw;
+}
+
+[src="pictures/спиннер.png"]{
+    width: 15vw;
+    margin-top: -10vw;
+}
+
+.kart2{
+    width: 15vw;
+    height: 3.5vw;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 10.5vw;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+}
+
+.k2-1{
+    left: 21vw;
+}
+
+.k2-2{
+    left: 40vw;
+}
+
+.k2-3{
+    left: 59vw;
+}
+
+.k2-4{
+    left: 78vw;
+    background-color: white;
+    border: 1px solid #111;
+}
+
+.footer-kart{
+    width: 25vw;
+    height: 7vw;
+    border: 0.2vw solid #111;
+    background-color: white;
+    margin-top: -3.5vw;
+    border-top-left-radius: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-kart-v2{
+    width: 5vw;
+    height: 7vw;
+    border: 0.2vw solid #111;
+    background-color: white;
+    margin-right: 0.1vw;
+    margin-top: -3.5vw;
+    border-top-left-radius: 1vw;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 90vw;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1vw;
+}
+
+h1{
+    color: #777;
+    font-size: 2.2vw;
+    margin-top: -0vw;
+    font-family: "roboto"; 
+}
+
+.t1 > h1{
+    color: #777;
+    border-bottom: 0.2vw solid #777;
+    font-size: 2vw;
+    margin-top: -0vw;
+    font-family: "roboto";
+}
+
+h2{
+    margin-top: -1vw;
+    font-size: 1.4vw;
+}
+
+h3{
+    margin-top: -1vw;
+    color: #555;
+    font-size: 1vw;
+}
+
+.red{
+    width: 6vw;
+    height: 6vw;
+    background-color: #FE4655;
+    margin-top: 1vw;
+    margin-right: 3vw;
+}
+
+[src="pictures/footer1.png"]{
+    width: 4vw;
+    margin-left: 2.5vw;
+    margin-top: -0.5vw;
+}
+
+[src="pictures/footer3.png"]{
+    width: 6vw;
+    margin-left: 2.5vw;
+    margin-top: -0.5vw;
+}
+
+[src="pictures/footer2.png"]{
+    width: 5vw;
+    margin-left: 2.5vw;
+    margin-top: -1vw;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 0.6vw solid transparent;
+    border-right: 0.6vw solid transparent;
+    border-bottom: 1vw solid black;
+    rotate: 90deg;
+    margin-right: -1vw;
+}
+
+.footer-kart-v2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
